@@ -1,3 +1,4 @@
 class TeamSerializer < ActiveModel::Serializer
-  attributes :id, :team_name
+  attributes :id
+  belongs_to :user
 end
