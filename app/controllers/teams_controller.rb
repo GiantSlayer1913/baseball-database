@@ -1,5 +1,7 @@
-class TeamsController < ApplicationController
-  before_action :set_team, except: [:new, :edit]
+# frozen_string_literal: true
+
+class TeamsController < OpenReadController
+  before_action :set_team, only: %i[update destroy show]
 
   # GET /teams
   def index
@@ -39,13 +41,14 @@ class TeamsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_team
-      @team = Team.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def team_params
-      params.require(:team).permit(:team_name)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_team
+    @team = Team.find(params[:id])
+  end
+
+  # Only allow a trusted parameter "white list" through.
+  def team_params
+    params.require(:team).permit(:team_name, :user_id)
+  end
 end

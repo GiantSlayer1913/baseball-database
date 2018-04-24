@@ -1,13 +1,14 @@
 #!/bin/bash
 
-curl "http://localhost:4741/examples" \
+curl "http://localhost:4741/teams" \
   --include \
   --request POST \
   --header "Content-Type: application/json" \
   --header "Authorization: Token token=${TOKEN}" \
   --data '{
-    "example": {
-      "text": "'"${TEXT}"'"
+    "team": {
+      "team_name": "'"${NAME}"'",
+      "user_id": "'"${ID}"'"
     }
   }'
 
