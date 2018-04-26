@@ -7,7 +7,8 @@ curl "http://localhost:4741/teams/${ID}" \
   --header "Content-Type: application/json" \
   --data '{
     "team": {
-      "team_name": "'"${NAME}"'"
+      "team_name": "'"${NAME}"'",
+      "user_id": "'"${USERID}"'"
     }
   }'
 
