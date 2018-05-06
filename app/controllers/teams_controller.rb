@@ -3,14 +3,9 @@
 class TeamsController < OpenReadController
   before_action :set_team, except: %i[new edit]
 
-  # Define PlayersController
-  def players
-    @players = teams.players
-  end
-
   # GET /teams
   def index
-    @teams = current_user.teams
+    @teams = Team.all
 
     render json: @teams
   end

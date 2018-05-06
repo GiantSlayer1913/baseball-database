@@ -3,14 +3,9 @@
 class PlayersController < OpenReadController
   before_action :set_player, except: %i[new edit]
 
-  # Define TeamsController
-  def teams
-    @teams = user.teams
-  end
-
   # GET /players
   def index
-    @players = current_user.teams.players
+    @players = Player.all
 
     render json: @players
   end
@@ -54,6 +49,6 @@ class PlayersController < OpenReadController
 
   # Only allow a trusted parameter "white list" through.
   def player_params
-    params.require(:player).permit(:name)
+    params.require(:player).permit(:name, :position, :bat, :throw, :team_id)
   end
 end
