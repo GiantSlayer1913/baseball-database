@@ -1,9 +1,9 @@
-
+```md
 Github Baseball Database: https://github.com/GiantSlayer1913/baseball-database
 Github Baseball Client App:https://github.com/GiantSlayer1913/baseball-client-app
 Deployed Website: https://giantslayer1913.github.io/baseball-client-app/
 
-Welcome to the Baseball Client App readme.md file.
+Welcome to the Baseball Database App readme.md file.
 Above, you will find links to the actual deployed site, as well as, the links to
 this and the Baseball Database on github.
 
@@ -79,3 +79,4 @@ Thoughts after project...
   2. Try to get sleep, so 9-11 am = no distractions && good work rhythm.
 4. Ask a friend.
 5. Stay positive. Everthing's gonna be alright!
+```

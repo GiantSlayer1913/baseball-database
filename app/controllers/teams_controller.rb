@@ -1,7 +1,12 @@
 # frozen_string_literal: true
 
 class TeamsController < OpenReadController
-  before_action :set_team, only: %i[update destroy show]
+  before_action :set_team, except: %i[new edit]
+
+  # Define PlayersController
+  def players
+    @players = teams.players
+  end
 
   # GET /teams
   def index
