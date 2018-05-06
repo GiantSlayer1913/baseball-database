@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
 class PlayersController < OpenReadController
-  before_action :set_player, except: %i[new edit]
-
+  before_action :set_player, only: %i[show update destroy]
   # GET /players
   def index
     @players = Player.all
