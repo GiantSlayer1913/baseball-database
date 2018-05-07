@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl "http://localhost:4741/teams" \
+curl "http://localhost:4741/teams/${ID}" \
   --include \
   --request POST \
   --header "Content-Type: application/json" \
