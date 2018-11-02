@@ -10,6 +10,7 @@ gem 'puma', '~> 3.11.2'
 gem 'rack-cors', '~> 1.0.2', require: 'rack/cors'
 gem 'rails', '~> 5.1.3'
 gem 'loofah', '>= 2.2.3'
+gem 'ffi', '>=1.9.24'
 
 group :development, :test do
   gem 'byebug', '~> 10.0.0', platform: :mri
