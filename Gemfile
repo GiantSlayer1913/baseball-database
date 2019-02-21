@@ -13,7 +13,7 @@ gem 'rails', '~> 5.1.3'
 gem 'loofah', '>= 2.2.3'
 gem 'ffi', '>=1.9.24'
 gem 'activejob', '~> 5.2', '>= 5.2.2'
-gem 'nokogiri', '~> 1.6', '>= 1.6.7.2'
+gem 'nokogiri', '>= 1.8.5'
 
 group :development, :test do
   gem 'byebug', '~> 10.0.0', platform: :mri
